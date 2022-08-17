@@ -1,5 +1,8 @@
 name: fullcycle-ci-workflow
-on: [push]
+on: 
+  pull_request:
+    branches:
+      - develop
 jobs:
   check-applicarion:
     runs-on: ubuntu-latest
