@@ -1,0 +1,9 @@
+#!/bin/bash
+
+case $1 in
+up) docker-compose up -d ;;
+build) docker-compose up -d --build ;;
+down) docker-compose down ;;
+log) docker logs golang-app -f ;;
+cmd) docker exec -it golang-app bash ;;
+esac

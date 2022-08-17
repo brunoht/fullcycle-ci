@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    image: golang:latest
+    volumes:
+      - ./:/go
+    tty: true
+    container_name: golang-app
